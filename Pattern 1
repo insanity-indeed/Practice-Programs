@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"Enter number of Rows : ";
+    cin>>n;
+
+    
+    int i=1,count =1;
+        
+    while(i<=n){
+        int j=1,k=n-i+1,spaces1=i-1,spaces2=2;
+        //pattern to print 12345....
+        while(j<=n-i+1){
+            cout<<j++;
+            }
+        //pattern to print ****....
+        while(spaces1){
+            cout<<"*";
+            spaces1--;
+            }
+       //pattern to print *****....
+        while(spaces2<=i){
+            cout<<"*";
+            spaces2++;
+            }   
+        //pattern to print 54321....
+        while(k){
+            cout<<k--;
+            }
+          
+        cout<<endl;
+        i++;
+         
+    }
+    
+    
+    return 0;
+}
