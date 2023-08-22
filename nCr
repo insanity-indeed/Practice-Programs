@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int factorial(int n){
+    int ans = 1;
+    for(int i=1; i<=n;i++){
+        ans = ans * i;
+    }
+    return ans;
+}
+
+int ncr(int n,int c){
+    int num = factorial(n);
+    int den = factorial(c)*factorial(n-c);
+    return num/den;
+}
+
+int main()
+{
+    int n,c;
+    cin>>n>>c;
+    cout<<" "<<ncr(n,c);
+    return 0;
+}
