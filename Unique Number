@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+void print(int arr[], int size){
+    for(int i=0; i< size ; i++){
+        cout<< arr[i] << " " ;
+    }
+}
+
+bool isUnique(int arr[], int size, int nos){
+    for(int i=0; i<size; i++){
+        if(arr[i]==nos)
+            return 0;
+    }
+    return 1;
+}
+
+int main()
+{
+    int size ;
+    cout << "Enter the Size : " ;
+    cin >> size ;
+    
+    int arr[100];
+    
+    cout << "Enter the Array :" ;
+    
+    for(int i=0; i<size ; i++){
+        cin>> arr[i];
+    }
+    
+    int nos;
+    cout << "Enter the number which need to be unique : " ;
+    cin >> nos ;
+    
+    bool result = isUnique(arr,size,nos);
+    
+    if(result == 1)
+        cout << "Number is Unique.";
+    else
+        cout << "Number is Not Unique.";
+
+    return 0;
+}
