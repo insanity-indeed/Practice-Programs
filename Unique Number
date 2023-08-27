@@ -8,12 +8,12 @@ void print(int arr[], int size){
     }
 }
 
-bool isUnique(int arr[], int size, int nos){
+int isUnique(int arr[], int size){
+    int ans =0;
     for(int i=0; i<size; i++){
-        if(arr[i]==nos)
-            return 0;
+        ans = ans ^ arr[i];
     }
-    return 1;
+    return ans;
 }
 
 int main()
@@ -30,16 +30,10 @@ int main()
         cin>> arr[i];
     }
     
-    int nos;
-    cout << "Enter the number which need to be unique : " ;
-    cin >> nos ;
+
+    cout << "The number which is unique : " << isUnique(arr,size);
+
     
-    bool result = isUnique(arr,size,nos);
-    
-    if(result == 1)
-        cout << "Number is Unique.";
-    else
-        cout << "Number is Not Unique.";
 
     return 0;
 }
