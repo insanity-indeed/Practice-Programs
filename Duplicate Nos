@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+void print(int arr[], int size){
+    for(int i=0; i< size ; i++){
+        cout<< arr[i] << " " ;
+    }
+}
+
+int isdublicate(int arr[], int size, int nos){
+    int count=0;
+    for(int i=0; i<size; i++){
+        if(arr[i]==nos)
+            count++;
+    }
+    return count;
+}
+
+int main()
+{
+    int size ;
+    cout << "Enter the Size : " ;
+    cin >> size ;
+    
+    int arr[100];
+    
+    cout << "Enter the Array :" ;
+    
+    for(int i=0; i<size ; i++){
+        cin>> arr[i];
+    }
+    
+    int nos;
+    cout << "Enter the number : " ;
+    cin >> nos ;
+    
+    
+    
+    cout << "The number of times "<<nos<<" is repeating is :"<<isdublicate(arr,size,nos);
+    
+    return 0;
+}
