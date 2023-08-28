@@ -11,7 +11,7 @@ int DeciToBin(int n){
         int bits = n&1;
          ans = (bits * pow(10,i)) + ans;
          n=n>>1;
-         i++;
+         i++;   
     }
     
     return ans;
