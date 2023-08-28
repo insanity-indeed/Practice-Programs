@@ -18,7 +18,7 @@ int DeciToBin(int n){
 }
 
 int countOne(int a){   
-    int count=0;
+    int count=0;   
     int binary = DeciToBin(a);
     while(binary != 0 ){
         if (binary%10 ==1 )   
