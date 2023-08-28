@@ -13,7 +13,7 @@ int DeciToBin(int n){
          n=n>>1;
          i++;   
     }
-    
+        
     return ans;
 }
 
