@@ -15,7 +15,7 @@ int isUnique(int arr[], int size){
     }
     return ans;
 }
- 
+
 int main()
 {
     int size ;
