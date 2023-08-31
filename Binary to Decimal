@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int n; 
+    int n;
     cout<<"Enter the Number(in Binary Form) : ";
     cin>> n;
     int i=0,ans=0;
