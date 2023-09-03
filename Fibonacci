@@ -5,7 +5,7 @@ using namespace std;
 void fibonacci(int n){
     int a=0 , b=1, newno;
     cout<<a<<" "<<b<<" ";
-    for(int i =0 ; i<= n ; i++){
+    for(int i =0 ; i<= n ; i++){ 
         newno = a+b;
         cout<<newno<<" ";
         a=b;
