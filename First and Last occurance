@@ -12,7 +12,7 @@ int firstOcccur(int arr[], int size, int key){
             end = mid - 1;
         }
         else if(arr[mid]>key){
-            end = mid - 1;
+            end = mid - 1; 
         }
         else if(arr[mid]<key){
             start = mid + 1;
