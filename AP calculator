@@ -7,7 +7,7 @@ int ap(int n){
     return ans; 
 }
 
-int main() 
+int main()
 { 
     int n;
     cin>>n; 
