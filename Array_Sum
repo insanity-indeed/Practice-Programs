@@ -20,6 +20,6 @@ int main()
         cin>>arr[i]; 
     }
     
-    cout<<"Sum : "<<sum(arr,size);
+    cout<<"Sum : "<<sum(arr,size); 
     return 0;
 }
