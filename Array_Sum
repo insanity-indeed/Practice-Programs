@@ -10,7 +10,7 @@ int sum(int arr[], int size){
     return sum;
 }
 int main()
-{
+{   
     int size;
     cin >> size;
         
