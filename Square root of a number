@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int BinarySearch(int x){
+    int s = 0 ;
+    int e = x ;
+    long long int mid = s + (e-s)/2;
+
+    long long int ans = -1 ;
+    while (s<=e){
+        long long int square = mid*mid;
+        if(square  == x)
+            return mid;
+        if(square > x ){
+            e = mid - 1;
+        }
+        else{
+            ans = mid;
+            s = mid + 1;    
+        }
+        mid = s + (e-s)/2;        
+    }
+    return ans;
+}
+
+double precision(int x,int decimal,int ans){
+    double tempAns = ans;
+    double factor = 1; 
+    for(int i = 0; i < decimal; i++){
+        factor = factor / 10;
+        for(double j = tempAns ; j*j < x; j = j + factor ){
+            tempAns = j;
+        }
+        
+    }
+    return tempAns;
+    
+}
+
+int main()
+{
+    int x = 5;
+    int ans = BinarySearch(x);
+    cout << "The Answer : " << precision(x,3,ans) << endl;
+    return 0;
+}
